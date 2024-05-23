@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h2>Javascript</h2>
+<p id="demo"></p>
+<button onclick="document.write(5*8)">Click Me</button>
+<button onclick="alert(Date());">Check date and time</button>
+<button onclick="myfunc()">Function</button>
+<p id="func"></p>
+<p id="data"></p>
+
+<script type="text/javascript">
+	let name;
+	name = "Naomi";
+	document.write("hello");
+	console.log(name); // global scope
+	let a,b,c;
+	a = 60;
+	b = 50;
+	c = a + b;
+	function myfunc() {
+		let age =50;
+		console.log(age);
+	}
+	
+
+
+	let x = myfunc(4, 2);
+document.getElementById("func").innerHTML = x;
+function myfunc(a, b){
+ return a * b;
+ console.log(func);
+} 
+
+	const person = {
+		firstname:"naomi",
+		lastname:"mutheu",
+		age:"10",
+	}
+document.getElementById("data").innerHTML= person.firstname+"  "+person.lastname+" "+"is"+" "+person.age+" "+"yrs old.";
+let y = function(a,b){
+	return a-b;
+}
+console.log(y(12,1));
+</script>
+</body>
+</html>
